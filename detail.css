@@ -1,0 +1,740 @@
+html, body {
+    height: 100%;
+    width: 100%;
+    margin: 0;
+    font-family: 'Roboto', sans-serif;
+    overflow-x: hidden; /* disble the horizontal scroll */
+}
+
+.header
+{
+    font-size: 20px;
+    padding: 20px;  
+    font-family:'Raleway', sans-serif;
+    z-index: 2; /* Stay on top */
+    width: 100%;
+    background-color: white;
+    position: relative;
+    border-bottom: 2px solid #cacaca;
+    display: flex;  /* seperate content */
+    align-items: center; /* allow content in the middle of horizontal line */
+    justify-content: space-between; /* space between logo and login */
+}
+
+.header a /* header buttons */
+{
+    text-decoration: none; /* hide font underline */
+    color: black; /* change color to black */
+}
+
+#p4
+{
+   display: inline; 
+   position: relative;
+   right: 5px;
+   margin-right: 25px;
+   text-decoration: none;
+   color: black; 
+}
+
+#p5 
+{
+    display: inline;
+    margin-right: 25px;
+} 
+
+.container 
+{
+    max-width: 76%;
+    margin: 0 0;
+    padding: 15px;
+}
+
+.left-column /* picture contianer */
+{
+    margin: -15px; /* erase empty space */
+    background-color: #ECEEF0;
+    position: relative;
+    height: 60%;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+}
+
+.left-column-image svg /* arrow button */
+{
+    z-index: 2; /* stay on top */
+    position: absolute; 
+    max-width: 4%;
+    cursor: pointer; /* change cusor to pointer */
+}
+
+#prev /* left arrow button */
+{
+    top: 50%;
+    left: 1%;
+}
+
+#next /* right arrow button */
+{
+    top: 50%;
+    right: 3%;
+}
+
+.left-column img /* main images */
+{
+    width: 50%;
+    position: relative;
+    left: 25%;
+}
+
+.related-img /* bottom pat of container */
+{
+    height: 40%;
+    margin-top: 140px;
+}
+
+#related-text 
+{
+    display: flex;
+    background-color: white;
+    align-items: center;
+    justify-content: center; /* allow content in the center of vertical line */
+    font-size: larger;
+    letter-spacing: 1px;
+    font-weight: bold; /* change font to bold */
+}
+
+#related-text svg /* related logo */
+{
+    position: relative;
+    width: 20px;
+    padding-right: 15px;
+}
+
+.flex-container-row /* related content */
+{
+    display: flex;
+    margin-top: 30px;
+    justify-content: center;
+}
+
+.button /* contents boxes */
+{
+    font-size: 1.5em;
+    text-align: center;
+    padding: 20px;
+    border: 1px solid black;
+    cursor: pointer;
+    margin : 10px 20px;
+    border: none; /* disable border */
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2 /* allow shadow */);
+    border-radius: 10px;
+    font-size: 15px;
+    background-color: white;
+    width: 18%;
+}
+
+.button img /* content image */
+{
+    width: 80%;
+}
+
+.button a /* contont button */
+{
+    text-decoration: none;
+    color: black;
+}
+
+.right-column /* right sidebar */
+{
+    height: 100%; 
+    max-width: 22%; 
+    position: fixed; /* stay in place on scroll */
+    z-index: 1; /* Stay on top */
+    top: 0; /* Stay at the top */
+    right: 0;
+    background-color: white;
+    overflow-x: hidden; /* Disable horizontal scroll */
+    padding: 120px 10px 0px 20px;
+    border-left: 1px solid #cacaca;
+}
+
+.product-description 
+{
+    border-bottom: 1px solid #E1E8EE;
+    margin-bottom: 30px;
+}
+
+.product-description span /* product caregories */
+{
+    font-size: 12px;
+    color: #358ED7;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+    text-decoration: none;
+    letter-spacing: 2px;
+}
+
+.product-description h1 /* product name */
+{
+    font-weight: 300;
+    font-size: 60px;
+    color: #43484D;
+    letter-spacing: -2px;
+    margin-bottom: 40px;
+}
+
+.product-description p /* product description */
+{
+    text-align: justify;
+    font-size: 16px;
+    font-weight: 300;
+    color: #86939E;
+    line-height: 24px;
+}
+
+.product-size 
+{
+    margin-top: 40px;
+}
+
+.product-size p /* product size text */
+{
+    font-size: 16px;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+}
+
+.product-size select /* product size choice */
+{
+    font-size: larger;
+    padding: 15px 15px;
+    width: 80px;
+    border-radius: 10px;
+}
+
+.stock-config /* product stock */
+{
+    font-size: 16px;
+    padding:  20px 0;
+    letter-spacing: 2px;
+}
+
+.stock-choose span { /* product stock texts */
+    color: black;
+    font-size: larger;
+}
+
+#stock /* product stock number */
+{
+    color: red;
+}
+
+.product-price /* product price */
+{
+    display: flex;
+    align-items: center;
+}
+
+.product-price span /* product price text */
+{
+    font-size: 26px;
+    font-weight: bold;
+    color: #43474D;
+    margin-right: 20px;
+}
+
+.cart-btn /* product price button */
+{
+    display: inline-block;
+    background-color: #7DC855;
+    border-radius: 6px;
+    font-size: 16px;
+    color: #FFFFFF;
+    text-decoration: none;
+    padding: 12px 30px;
+    transition: all .5s;
+}
+
+.cart-btn:hover /* hover animation */
+{
+    background-color: #64af3d;
+}
+
+footer 
+{
+    position: relative;
+    margin-top :20px;
+    z-index: 0;
+    background-color: black;
+    height :300px;
+    display: flex;  
+    width: 78%;
+}
+ 
+footer div { 
+    flex-basis: 33.3%;
+    color :white;
+    margin-left: auto;
+    margin-right: auto;
+}
+ 
+.one
+{
+    margin-bottom :25px;
+    margin-top : 25px;
+    margin-left :100px;
+    margin-right : 300px;
+}
+ 
+ 
+.two{ 
+    text-align: left;
+    margin : 25px
+}
+ 
+.three{
+    text-align: left;
+    margin : 25px;
+}
+ 
+.four{
+    text-align: center;
+    border-top: 1px;
+    border-color: black;
+    width: 78%;
+}
+
+/* 1280 for laptops */
+@media only screen and (max-width: 1280px)
+{
+   .header
+    {
+       padding: 15px;
+       font-size: 13px;
+       height: 11.9px;
+    }
+
+   .right-column
+    {
+        max-width: 21.9%;
+        padding: 78px 7px 0px 13px;
+    }
+
+    .product-description span
+    {
+        letter-spacing: 1px;
+        font-size: 8.5px;
+    }
+
+    .product-description h1
+    {
+       font-size: 40.7px;
+       margin-bottom: 20px;
+    }
+
+    .product-description p
+    {
+        font-size: 12px;
+    }
+
+    .product-size
+    {
+        margin-top: -17px;
+    }
+
+    .product-size p, .stock-config
+    {
+        font-size: 10px;
+        letter-spacing: 1px;
+    }
+
+    .product-size select
+    {
+        font-size: 12px;
+        padding: 10px 8px;
+        width: 53px;
+    }
+
+    .product-price span
+    {
+        font-size: 18px;
+        margin-right: 12px;
+    }
+
+    .cart-btn
+    {
+        font-size: 12px;
+        padding: 7px 20px;
+    }
+
+    #related-text
+    {
+        margin-right: 11px;
+    }
+
+    .button
+    {
+        margin-left: 10px;
+        width: 15%;
+    }
+
+    footer 
+    {
+        height: 200px;
+        font-size: 12px;
+    }
+
+    .one
+    {
+        margin: 10px 200px 30px 80px;
+    }
+
+    .four
+    {
+        font-size: 12px;
+    }
+}
+
+/* 992 for wide tablets */
+@media only screen and (max-width: 992px) 
+{
+    .header
+    {
+        height: 1px;
+    }
+
+    .right-column 
+    {
+        max-width: 19.5%;
+        padding-top: 30px;
+    }
+
+    .product-description span
+    {
+        font-size: 8px;
+    }
+
+    .product-description h1
+    {
+        font-size: 25.5px;
+        margin-bottom: 18px;
+    }
+
+    .product-description p
+    {
+        line-height: 15px;
+    }
+
+    .product-description p, .product-size p, .stock-config, .product-size select
+    {
+        font-size: 10px;
+    }
+
+    .product-size select
+    {
+        width: 50px;
+        padding: 5px 5px;
+    }
+
+    .product-price span
+    {
+        font-size: 16px;
+        margin-right: px;
+    }
+
+    .cart-btn
+    {
+        border-radius: 3px;
+        font-size: 9px;
+        padding: 7px 9px;
+    }
+    
+    #related-text
+    {
+        font-size: 14px;
+    }
+
+    #related-text svg
+
+    {
+        width: 17px;
+        padding-right: 10px;
+    }
+
+    .button, .button button
+    {
+        font-size: 10px;
+    }
+    .button
+    {
+        padding: 10px;
+    }
+
+    footer 
+    {
+        height: 200px;
+        font-size: 10px;
+    }
+
+    .one
+    {
+        margin: 9px 120px 30px 50px;
+    }
+
+    .four
+    {
+        font-size: 10px;
+    }
+} 
+
+/* 768 for mobiles and potrait tablets*/
+@media all and (max-width: 768px)
+{
+    .header
+    {
+        font-size: 20px;
+        height: 30px;
+    }
+
+    .container
+    {
+        max-width: 100%;
+    }
+
+    .left-column
+    {
+        margin: 5px;
+    }
+
+    .left-column img
+    {
+        width: 80%;
+        left: 10%;
+    }
+
+    .left-column-image svg
+    {
+        max-width: 7%;
+    }
+
+    #next
+    {
+        right: 1%;
+    }
+
+    .right-column 
+    {
+        margin-top: 70px;
+        height: 100%; /* Full-height: remove this if you want "auto" height */
+        max-width: 100%; /* Set the width of the sidebar */
+        position: relative; /* Fixed Sidebar (stay in place on scroll) */
+        z-index: 0; /* Stay on top */
+        top: 0; /* Stay at the top */
+        right: 0;
+        background-color: white;
+        overflow-x: auto; /* Disable horizontal scroll */
+        padding: 0px;
+        border-left: none;
+    }
+
+    .product-description
+    {
+        margin-bottom: 0px;
+    }
+    
+    .product-description span 
+    {
+        font-size: 12px;
+        color: #358ED7;
+        letter-spacing: 1px;
+        text-transform: uppercase;
+        text-decoration: none;
+        letter-spacing: 2px;
+    }
+    
+    .product-description h1 
+    {
+        font-weight: 300;
+        font-size: 60px;
+        color: #43484D;
+        letter-spacing: -2px;
+        margin-bottom: 40px;
+    }
+    
+    .product-description p 
+    {
+        text-align: justify;
+        font-size: 16px;
+        font-weight: 300;
+        color: #86939E;
+        line-height: 24px;
+    }
+    
+    .product-size
+    {
+        margin-top: 40px;
+    }
+    .product-size p
+    {
+        font-size: 16px;
+        text-transform: uppercase;
+        letter-spacing: 2px;
+    }
+    
+    .product-size select
+    {
+        font-size: larger;
+        padding: 15px 15px;
+        width: 80px;
+        border-radius: 10px;
+    }
+    
+    .stock-config
+    {
+        font-size: 16px;
+        padding:  20px 0;
+        letter-spacing: 2px;
+    }
+    .stock-choose span {
+        color: black;
+        font-size: larger;
+    }
+    
+    #stock {
+        color: red;
+    }
+    
+    #amount {
+        width: 15%;
+        height: 25px;
+        box-sizing: border-box;
+        text-align: center;
+        border: 2px solid grey;
+    }
+    
+    .product-price {
+        display: flex;
+        align-items: center;
+    }
+    
+    .product-price span {
+        font-size: 26px;
+        font-weight: bold;
+        color: #43474D;
+        margin-right: 20px;
+    }
+    
+    .cart-btn {
+        display: inline-block;
+        background-color: #7DC855;
+        border-radius: 6px;
+        font-size: 16px;
+        color: #FFFFFF;
+        text-decoration: none;
+        padding: 12px 30px;
+        transition: all .5s;
+    }
+
+    .cart-btn:hover {
+        background-color: #64af3d;
+    }
+
+    .related-img
+    {
+        height: 40%;
+        margin-top: 200px;
+    }
+
+    #related-text
+    {
+        display: flex;
+        background-color: white;
+        align-items: center;
+        justify-content: center;
+        font-size: larger;
+        letter-spacing: 1px;
+        font-weight: bold;
+    }
+    #related-text svg
+    {
+        width: 20px;
+        padding-right: 15px;
+    }
+
+    .flex-container-row {
+        display: flex;
+        flex-direction: column;
+        margin-top: 30px;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .button 
+    {
+        font-size: 1.5em;
+        text-align: center;
+        padding: 20px;
+        border: 1px solid black;
+        cursor: pointer;
+        margin : 10px 20px;
+        border: none;
+        box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+        border-radius: 10px;
+        font-size: 22.5px;
+        background-color: white;
+        width: 80%;
+    }
+
+    .button button
+    {
+        font-size: 22.5px;
+    }
+
+    .button img{
+        width: 100%;
+    }
+    footer{
+        position: relative;
+        margin-top :20px;
+        z-index: 0;
+        font-size: small;
+        background-color: black;
+        height :150px;
+        display: flex;  
+        width: 100%;
+    }
+    
+    footer div {
+        flex-basis: auto;
+        color :white;
+        margin-left: auto;
+        margin-right: auto;
+    }
+    
+    .one{
+        margin-bottom :0px;
+        margin-top : 0px;
+        margin-left :10px;
+        margin-right : 0px;
+        width: 50%;
+    }
+    
+    .two{ 
+        text-align: left;
+        margin : 0px;
+        width: 25%;
+    }
+    
+    .three{
+        text-align: left;
+        margin : 0px;
+    }
+    
+    .four{
+        text-align: center;
+        border-top: 1px;
+        border-color: black;
+        width: 100%;
+    }
+}
+
